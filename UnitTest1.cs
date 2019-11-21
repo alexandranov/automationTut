@@ -22,20 +22,13 @@ namespace AutomationTut.by
         {
            string baseURL = @"https://www.tut.by/";
             driver = new ChromeDriver(@"/Users/aleksandra/Documents/chromedrivers/");
-
            currentTime = DateTime.Now;
-
             driver.Navigate().GoToUrl(baseURL);
             wait = new WebDriverWait(driver, new TimeSpan(0,0,20));
             
         }
 
-        [Test]
-        public void TestU()
-        {
-            TUT_BY_page elements = new TUT_BY_page(driver);
-            elements.searhField.SendKeys("Test");
-        }
+       
 
         [Test]
         public void Test1()
