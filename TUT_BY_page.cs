@@ -12,7 +12,7 @@ namespace AutomationTut.by
             this.driver = driver;
         }
 
-        internal protected IWebElement searhField => driver.FindElement(By.XPath("//input[@id='search_from_str']"));
+        //internal protected IWebElement searhField => driver.FindElement(By.XPath("//input[@id='search_from_str']"));
 
         string login = "aliaksandranovikava@tut.by";
         string password = "sasha220982";

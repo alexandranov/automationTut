@@ -26,11 +26,11 @@ namespace AutomationTut.by
         public string message_topic = "//*[@id='nb-1']/body/div[2]/div[6]/div/div[3]/div[3]/div[2]/div[5]/div[1]/div/div/div[2]/div/div[1]/div/div/div/a/div/span[2]/div/span/span[1]/span[1]/span";
         public string done_massage = "//div[class='mail-Done js-done']";
         public void SwitchToEmailPage() {
-            driver.SwitchTo().Window(driver.WindowHandles.Last());
+          driver.SwitchTo().Window(driver.WindowHandles.Last());
         }
 
         public void ClickOnWriteButton(){
-            driver.FindElement(By.XPath(write_button)).Click();
+          driver.FindElement(By.XPath(write_button)).Click();
         }
 
         public void ClickOnMyselfButton()
